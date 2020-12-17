@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="596904a9091d4c84a7ccc9e4e9e70207" Name="Diagram1">
+        <EntityTypeShape EntityType="BibekbooksModel.category" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BibekbooksModel.order" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="BibekbooksModel.orderdetail" Width="1.5" PointX="5.25" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BibekbooksModel.productimage" Width="1.5" PointX="10.5" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BibekbooksModel.product" Width="1.5" PointX="8.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BibekbooksModel.user" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="BibekbooksModel.FK_products_category" ManuallyRouted="false" />
+        <AssociationConnector Association="BibekbooksModel.FK_Order_user" ManuallyRouted="false" />
+        <AssociationConnector Association="BibekbooksModel.FK_orderdetails_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="BibekbooksModel.FK_products_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="BibekbooksModel.FK_productimage_products" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

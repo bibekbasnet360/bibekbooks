@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Beady's Books</h1>
+    <p class="lead">Books for Everyone.</p>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<script>
+    $(function () {
+        $("#draggable").draggable();
+        $("#droppable").droppable({
+            drop: function (event, ui) {
+                $(this)
+                    .addClass("ui-state-highlight")
+                    .find("p")
+                    .html("Dropped!");
+            }
+        });
+    });
+</script>
+
+<div style="clear:both;"></div>
+<div class="slider">
+
+    
+        <div>
+            <img src="~/Content/pics/9780520287327n.jpg" width="200" height="200" ; />
+        </div>
+
+        <div>
+            <img src="~/Content/pics/9780520287327n" width="1000px;" height="100" ; />
+        </div>
+
+        <div>
+            <img src="uploads\image-asset1.jpg" width="1000px;" height="100" ; />
+        </div>
+
+        <div>
+            <img src="uploads\image-asset1.jpg" width="1000px;" height="100" ; />
+        </div>
+
+        <div>
+            <img src="uploads\image-asset1.jpg" width="1000px;" height="100" ; />
+        </div>
+
+
+</div>
+            </div>
+<div style="clear:both;"></div>
+               </div>
+               </div>
+</body>
+</html>       
